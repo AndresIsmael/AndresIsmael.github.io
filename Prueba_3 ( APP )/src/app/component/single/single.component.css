@@ -1,0 +1,37 @@
+.tituloS {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.userB {
+    font-size: 11px;
+    color: #78baff;
+}
+
+.textoS {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.spn_T {
+    color: #03A9F4;
+    font-size: 11px;
+}
+
+.correo {
+    position: relative;
+    font-size: 13px;
+}
+
+.card {
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.t_comments {
+    position: relative;
+    font-size: 29px;
+    font-weight: 300;
+}

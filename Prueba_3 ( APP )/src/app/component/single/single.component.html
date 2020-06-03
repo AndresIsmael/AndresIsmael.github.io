@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p *ngIf="data.title" class="tituloS mt-5 mb-0 animate__animated animate__fadeInDown">{{ data.title }}</p>
+                <p *ngIf="data.userId" class="userB mb-0 animate__animated animate__fadeInDown">By user: {{ data.userId }}</p>
+                <p *ngIf="data.body" class="textoS mt-1 mb-0 animate__animated animate__flipInX">{{ data.body }}</p>
+                <p class="t_comments mb-0 mt-4 animate__animated animate__flipInX">Comments</p>
+                <div class="card mb-3 animate__animated animate__bounceIn" *ngFor="let dtC of dtCs">
+                    <div class="card-body p-0 mb-4">
+                        <p class="card-title m-0">{{ dtC.name }} - <span class="spn_T">May 25th</span></p>
+                        <p class="correo m-0"><i>{{ dtC.email }}</i></p>
+                        <p class="card-text">{{ dtC.body }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>

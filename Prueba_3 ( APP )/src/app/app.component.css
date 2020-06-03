@@ -1,0 +1,9 @@
+.encabezado {
+    position: relative;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 7px;
+}

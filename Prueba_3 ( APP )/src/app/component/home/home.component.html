@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row mt-5 mb-4 animate__animated animate__fadeInLeft">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <p class="new m-0">News</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-10 mt-1">
+            <input type="text" class="search" placeholder="Search by user">
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="card carta animate__animated animate__bounceIn" *ngFor="let dato of data; let i = index" [routerLink]="['/home', dato.id]">
+            <div class="card-body">
+                <h1 class="card-title tituloC">{{ dato.id }}</h1>
+                <h5 class="card-title tituloC">{{ dato.title }}</h5>
+                <p class="card-text textoC">{{ dato.body }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+</div>
